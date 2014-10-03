@@ -1,0 +1,23 @@
+<ul>
+  
+  {{#each this}}
+  
+    <li class="news" data-news-id="{{id}}" data-href="{{printFragment_news this}}">
+      
+      <a href="{{printRoute_news this}}" class="clearfix">
+        <span class="image"><img src="{{pictureUrl}}" /></span>
+        <span class="content">
+          <h3 class="title"   >                   {{title}}                         </h3>
+          <span class="dateTime">                 {{printLongDateTime publishedOn}} </span>
+        </span>
+      </a>
+      
+    </li>
+  
+  {{/each}}
+  
+  {{#if this}}
+  {{else}}
+    <span class="list-empty">Nema pronađenih novosti za navedni upit.</span>
+  {{/if}}
+</ul>

@@ -1,0 +1,46 @@
+﻿@import "../Shared/variables";
+
+.home .social 
+{
+    &                               { background-color: #385490; width: 100%; display: block; position: relative; text-align: right; }
+
+    h2                              { top: 5em; text-align: left; position: absolute; }
+    h2 span                         { font-size: 3em; .base-light-font(); color: #d3ebff;  }
+
+    .segment                        { padding: 5em 5em 3em 5em; height: 16em; display: block; float: right; .css-transition-all();  }
+    .segment.tw                     { background-color: #00aced; }
+    .segment.yt                     { background-color: #b4001e; }
+
+    .segment:hover                  { background-color: #4769b2; }
+    .segment.tw:hover               { background-color: #2ac2fc; }
+    .segment.yt:hover               { background-color: #db193a; }
+
+    .segment.tw img                 { width: 6em; }
+    .segment.yt img                 { width: 5em; }
+
+    .icon                           { padding-bottom: 5em; text-align: right; }
+    .icon img                       { width: 2.5em; }    
+
+    .info                           { text-align: right; }
+    .info .number                   { font-size: 3em; color: white; .base-semibold-font(); display: block; }
+    .info .link                     { font-size: 1.6em; color: rgba(255, 255, 255, 0.68); display: block; }
+
+}
+
+@media only screen and (max-width: 1250px)
+{  
+    .home .social 
+    {
+        h2 span                     { font-size: 2em; }
+    }
+}
+
+@media only screen and (max-width: 950px)
+{  
+    .home .social 
+    {
+        h2                          { display: none; }
+       .segment                     { float: none; height: auto; position: relative; }
+       .icon                        { position: absolute; left: 5em; top: 5em; }
+    }
+}

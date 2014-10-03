@@ -1,0 +1,69 @@
+﻿@import "../Shared/variables";
+
+ .about 
+{
+    &                               { position: relative; z-index: 10; background-color: white; padding-bottom: 10em;  }
+
+    h1                              { text-align: center; padding: 5em 2em 3em; }
+    h1 span                         { font-size: 4.6em; .base-light-font(); color: #484848;  }
+
+
+    .table                          { display: table; }
+
+    .table .col                     { float: left; text-align: center; width: 33%; vertical-align: top; }
+    .table h2                       { font-size: 2.2em; .base-semibold-font(); padding: 0 4em; }
+    .table p                        { font-size: 1.6em; padding: 0 4em; padding-top: 1em;  }
+
+    .table .col .icon               { position: relative; height: 25em;  }
+    .table .col img                 { position: absolute; margin: auto; top: 0; bottom: 3em; left: 0; right: 0; width: 11em; opacity: .9;  }
+
+}
+
+@media only screen  and (min-width: 901px) and (max-width: 1250px)
+{  
+    .home .about 
+    {
+        &                           { padding-bottom: 0em; }
+
+        .table .col .icon           { height: 16em; float: left;  }
+        .table .col                 { text-align: left; display: block; width: 90%; float: none; margin: 6em auto 12em; }
+        .table .col img             { width: 10em;  }
+        
+        .table p                    { font-size: 1.6em; padding: 0 0 0 11em; padding-top: 1em;  }
+
+        h1 span                     { font-size: 4.2em;  }
+        h2                          { padding-left: 7.95em; }
+
+    }
+}
+@media only screen and (min-width: 620px) and (max-width: 900px)
+{  
+    .home .about 
+    {
+        &                           { padding-bottom: 0em; }
+
+        h1 span                     { font-size: 3.2em;  }
+        h2                          { padding-left: 7.95em; }
+
+        .table .col .icon           { height: 16em; float: left;  }
+        .table .col                 { text-align: left; display: block; width: 90%; float: none; margin: 6em auto 12em; }
+        .table .col img             { width: 10em;  }
+        
+        .table p                    { font-size: 1.7em; padding: 0 0 0 11em; padding-top: 1em;  }
+
+    }
+}
+@media only screen and (max-width: 619px)
+{  
+    .home .about 
+    {
+        &                           { padding-bottom: 0em; }
+
+        h1 span                     { font-size: 3.2em;  }
+        .table .col .icon           { height: 20em;  }
+        .table .col                 { display: block; width: 100%; float: none; margin-bottom: 6em; }
+
+        .table p                    { font-size: 1.7em; padding: 0 1em;  padding-top: 1em;}
+
+    }
+}

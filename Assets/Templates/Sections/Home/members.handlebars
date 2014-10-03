@@ -1,0 +1,36 @@
+﻿<div class="members">
+
+	<h2>	<span>Tko su dumpovci?</span>	</h2>
+	<p>		<span>Trenutno brojimo 15 <i>geekova</i>, većinom studenata FESB-a. Tko su oni, kako su došli u DUMP i čime se svaki član bavi možete saznati ispod.</span>	</p>
+
+	<ul class="outerMargins clearfix">
+	  {{#each this}}
+		  <li class="member"> 
+        <a title="{{fullName}}"> <img src="{{pictureUrl}}" alt="{{fullName}}" />  <span>+</span> </a>
+        <span class="memberStory">
+          <img src="{{pictureUrl}}" alt="{{fullName}}" />
+
+          <span class="story">
+            <h2>{{fullName}}</h2>
+            <p>{{description}}</p>
+
+            <ul>
+              <li> <a href="mailto:{{email}}">{{email}}</a> </li>
+              {{#if facebookUrl}}<li> <a target="_blank" href="{{facebookUrl}}">{{facebookUrl}}</a> </li>{{/if}}
+              {{#if twitterUrl}}<li> <a target="_blank" href="{{twitterUrl}}">{{twitterUrl}}</a> </li>{{/if}}
+              {{#if linkedInUrl}}<li> <a target="_blank" href="{{linkedInUrl}}">{{linkedInUrl}}</a> </li>{{/if}}
+              {{#if otherUrl}}<li> <a target="_blank" href="{{otherUrl}}">{{otherUrl}}</a> </li>{{/if}}
+            </ul>
+          </span>
+        </span>
+      </li>
+    {{/each}}
+	
+    <li class="signup"> 
+      <a href="mailto:info%40dump%2ehr?subject={IME} {PREZIME} - Prijava za članstvo u DUMP Udruzi mladih programera"> 
+        <span>Ti?</span> 
+      </a> 
+    </li>
+	</ul>
+
+</div>

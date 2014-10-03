@@ -1,0 +1,109 @@
+﻿// Metrics
+@margin-outer:  9.3%;
+@margin-inner:  14.06%;
+
+// Tyopgraphy
+@color-text:    #4e4e4e;
+@color-heading: #282828;
+
+
+.base-font() 
+{
+    font-family: 'Open Sans',"Segoe UI", Arial, Tahoma, sans-serif;
+	font-weight: 400;
+}
+
+.base-semibold-font() 
+{
+    font-family: 'Open Sans',"Segoe UI Semibold", "Segoe UI",  Arial, Tahoma, sans-serif;
+	font-weight: 600;
+}
+
+.base-light-font() 
+{
+    font-family: 'Open Sans',"Segoe UI Light", "Segoe UI",  Arial, Tahoma, sans-serif;
+	font-weight: 100;
+}
+.base-semilight-font() 
+{
+    font-family: 'Open Sans',"Segoe UI Semilight", "Segoe UI",  Arial, Tahoma, sans-serif;
+	font-weight: 200;
+}
+
+.enable-3d-perspective(@amount: 1000) 
+{
+    -moz-perspective: @amount;
+    -ms-perspective: @amount;
+    -webkit-perspective: @amount;
+    perspective: @amount;
+}
+
+.base-metro-style-3d-transformation(@rotateY: 0deg, @rotateX: 0deg, @originX: left, @originY: center) {
+    -moz-transition-property: transform;
+    -o-transition-property: transform;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -moz-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+    -moz-transform-origin: @originX @originY;
+    -ms-transform-origin: @originX @originY;
+    -o-transform-origin: @originX @originY;
+    -webkit-transform-origin: @originX @originY;
+    transform-origin: @originX @originY;
+    -moz-transform: rotateY(@rotateY) rotateX(@rotateX);
+    -ms-transform: rotateY(@rotateY) rotateX(@rotateX);
+    -o-transform: rotateY(@rotateY) rotateX(@rotateX);
+    -webkit-transform: rotateY(@rotateY) rotateX(@rotateX);
+    transform: rotateY(@rotateY) rotateX(@rotateX);
+}
+
+.metro-style-3d-left(@rotateDeg: 5deg) 
+{
+    .base-metro-style-3d-transformation(@rotateDeg, 0, left, center);
+}
+.metro-style-3d-right(@rotateDeg: 5deg) 
+{
+    .base-metro-style-3d-transformation(-@rotateDeg, 0, right, center);
+}
+.metro-style-3d-bottom(@rotateDeg: 5deg) 
+{
+    .base-metro-style-3d-transformation(0, @rotateDeg, bottom, center);
+}
+.metro-style-3d-top(@rotateDeg: 5deg) 
+{
+    .base-metro-style-3d-transformation(0, -@rotateDeg, top, center);
+}
+
+
+.css-transition(@duration: 200ms, @properties: all, @easeFunc: ease-out) 
+{
+    -webkit-transition: @properties @duration @easeFunc;
+	-moz-transition:    @properties @duration @easeFunc;
+    -ms-transition:     @properties @duration @easeFunc;
+    -o-transition:      @properties @duration @easeFunc;
+	transition:         @properties @duration @easeFunc;
+}
+
+.css-transition-all(@duration: 200ms) 
+{
+    -webkit-transition: all @duration ease-out;
+	-moz-transition:    all @duration ease-out;
+    -ms-transition:     all @duration ease-out;
+    -o-transition:      all @duration ease-out;
+	transition:         all @duration ease-out;
+}
+.disableBackfaceVisibility() {
+    -ms-backface-visibility:hidden; 
+    -moz-backface-visibility: hidden; 
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+}
+.disableSelection() {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}

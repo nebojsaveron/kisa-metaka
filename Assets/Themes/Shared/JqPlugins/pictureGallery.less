@@ -1,0 +1,32 @@
+﻿@import "../variables";
+
+html.picture-gallery-active                 { overflow: hidden; }
+.picture-gallery-ui 
+{
+    &                                       { position: absolute; top: 0; left: 0; right: 0; bottom: 0; overflow: hidden; }
+
+    .flexslider                             { box-shadow: none; -webkit-box-shadow: none; }
+    .slider-wrapper                         { height: 100%; overflow: hidden;
+                                              -webkit-box-shadow: inset 0px 0px 50px 10px rgba(0, 0, 0, .6); box-shadow: inset 0px 0px 50px 10px rgba(0, 0, 0, .6); }
+    .slider                                 
+    {
+        &                                   { height: 100%; width: 100%; margin: 0 auto; background: transparent; border: none; }
+        .flex-viewport                      { height: 100%; }
+        ul                                  { height: 100%; }
+        li                                  { text-align: center; height: 100%;  }
+        .slides img                         { max-height: 80%; max-width: 80%; width: auto; display: inline; vertical-align: middle; cursor: pointer;
+                                             -webkit-box-shadow:  0px 0px 50px 1px rgba(0, 0, 0, .5); box-shadow:  0px 0px 50px 1px rgba(0, 0, 0, .5); }    
+        .flex-direction-nav                 { z-index: 100; }
+        .flex-direction-nav a               { margin: 0 3em; width: 4.2em; height: 4.2em; .css-transition-all(100ms);
+                                              -moz-background-size: 100% 100%; -o-background-size: 100% 100%; -webkit-background-size: 100% 100%; background-size: 100% 100%; }
+        .flex-direction-nav a.flex-next     { background-image: url('/Assets/Themes/External/Lib/flexslider/images/next.png'); }
+        .flex-direction-nav a.flex-prev     { background-image: url('/Assets/Themes/External/Lib/flexslider/images/prev.png'); }
+
+        .flex-control-nav                   { bottom: 4%; .disableSelection();}
+        .flex-control-nav li                { margin: 0 .2em; }
+        .flex-control-nav a                 { border-radius: 0; box-shadow: none; width: 1.8em; height: 1.3em;  background: rgba(130, 130, 130, .8); .css-transition-all(200ms); }
+        .flex-control-nav a:hover           { background: rgba(255, 255, 255, .8);  }
+        .flex-control-nav a.flex-active     { background: rgba(255, 255, 255, 1);  }
+    }
+}
+

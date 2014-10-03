@@ -1,0 +1,133 @@
+﻿.about {
+  position: relative;
+  z-index: 10;
+  background-color: white;
+  padding-bottom: 10em;
+}
+.about h1 {
+  text-align: center;
+  padding: 5em 2em 3em;
+}
+.about h1 span {
+  font-size: 4.6em;
+  font-family: 'Open Sans', "Segoe UI Light", "Segoe UI", Arial, Tahoma, sans-serif;
+  font-weight: 100;
+  color: #484848;
+}
+.about .table {
+  margin-top: 50px;
+  display: table;
+}
+.about .table .col {
+  float: left;
+  text-align: center;
+  width: 33%;
+  vertical-align: top;
+}
+.about .table h2 {
+  font-size: 2.2em;
+  font-family: 'Open Sans', "Segoe UI Semibold", "Segoe UI", Arial, Tahoma, sans-serif;
+  font-weight: 600;
+  padding: 0 4em;
+}
+.about .table p {
+  font-size: 1.6em;
+  padding: 0 4em;
+  padding-top: 1em;
+}
+.about .table .col .icon {
+  position: relative;
+  height: 25em;
+}
+.about .table .col img {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 3em;
+  left: 0;
+  right: 0;
+  width: 21em;
+  opacity: .9;
+}
+@media only screen and (min-width: 901px) and (max-width: 1250px) {
+  .home .about {
+    padding-bottom: 0em;
+  }
+  .home .about .table .col .icon {
+    height: 16em;
+    float: left;
+  }
+  .home .about .table .col {
+    text-align: left;
+    display: block;
+    width: 90%;
+    float: none;
+    margin: 6em auto 12em;
+  }
+  .home .about .table .col img {
+    width: 10em;
+  }
+  .home .about .table p {
+    font-size: 1.6em;
+    padding: 0 0 0 11em;
+    padding-top: 1em;
+  }
+  .home .about h1 span {
+    font-size: 4.2em;
+  }
+  .home .about h2 {
+    padding-left: 7.95em;
+  }
+}
+@media only screen and (min-width: 620px) and (max-width: 900px) {
+  .home .about {
+    padding-bottom: 0em;
+  }
+  .home .about h1 span {
+    font-size: 3.2em;
+  }
+  .home .about h2 {
+    padding-left: 7.95em;
+  }
+  .home .about .table .col .icon {
+    height: 16em;
+    float: left;
+  }
+  .home .about .table .col {
+    text-align: left;
+    display: block;
+    width: 90%;
+    float: none;
+    margin: 6em auto 12em;
+  }
+  .home .about .table .col img {
+    width: 10em;
+  }
+  .home .about .table p {
+    font-size: 1.7em;
+    padding: 0 0 0 11em;
+    padding-top: 1em;
+  }
+}
+@media only screen and (max-width: 619px) {
+  .home .about {
+    padding-bottom: 0em;
+  }
+  .home .about h1 span {
+    font-size: 3.2em;
+  }
+  .home .about .table .col .icon {
+    height: 20em;
+  }
+  .home .about .table .col {
+    display: block;
+    width: 100%;
+    float: none;
+    margin-bottom: 6em;
+  }
+  .home .about .table p {
+    font-size: 1.7em;
+    padding: 0 1em;
+    padding-top: 1em;
+  }
+}

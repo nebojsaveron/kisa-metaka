@@ -1,0 +1,26 @@
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+                                                 SEARCH BOX
+
+-------------------------------------------      ----------------------------------------------------------------------------------------------------------------------------------------*/
+.searchBox                                       { position: relative; width: 250px; font-size: 10px; background-color: white; }
+
+.searchBox .watermark                            { position: absolute; top: 0.5em; left: 0.5em; font-size: 1.2em; line-height: 1.35; color: #7d7d7d; }
+.searchBox .search                               { position: absolute; top: 0; right: 0.5em; bottom: 0; width: 1.5em; text-indent: -9999px; overflow: hidden;
+                                                   background: url('Images/search.svg') no-repeat center center; opacity: 0.3;
+                                                   -moz-background-size: 1.4em 1.4em; -o-background-size: 1.4em 1.4em; -webkit-background-size: 1.4em 1.4em; background-size: 1.4em 1.4em; }
+
+.searchBox .cancel                               { position: absolute; top: 0; right: 0.5em; bottom: 0; width: 1.5em; text-indent: -9999px; cursor: pointer; display: none;
+                                                   background: url('Images/cancel.svg') no-repeat center center; overflow: hidden; opacity: 0.3;
+                                                   -moz-background-size: 1.4em 1.4em; -o-background-size: 1.4em 1.4em; -webkit-background-size: 1.4em 1.4em; background-size: 1.4em 1.4em; }
+.searchBox .cancel.ui-state-hover                { opacity: 0.4; }
+.searchBox .cancel:active                        { opacity: 0.6; }
+                                                 
+.searchBox input                                 { width: 100%; padding: 1px 0 1px 0; border: 0 none transparent; outline: none; background-color: transparent;
+                                                   font-size: 1.3em; line-height: 1.35; }
+.searchBox input::-ms-clear                      { display: none; }
+
+.searchBox .inputContainer                       { border: 1px solid transparent; padding: .2em 1.5em .2em .5em; }
+.searchBox.ui-state-hover .inputContainer        { border: 1px solid #99dfff; }
+.searchBox.ui-state-focus .inputContainer        { border: 1px solid #4fc7ff; }
+ 

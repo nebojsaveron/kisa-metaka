@@ -1,0 +1,71 @@
+﻿@import "../Shared/variables";
+
+.home .billboard 
+{
+    &                                           { background-color: #000; }
+    .slide > a                                  { display: table; background-position: center center; height: 88em; width: 101%; position: relative; margin-left: -1px;
+                                                  -moz-background-size: cover; -o-background-size: cover; -webkit-background-size: cover; background-size: cover; }
+    .slide > a h1                               { display: table-cell; vertical-align: middle; width: 103%; position: relative; text-align: center;
+                                                   background-color: rgba(0, 0, 0, .1); .css-transition-all(); }
+    .slide > a h1 span                          { display: block; padding:  .45em 1em; text-align: center; font-size: 4.5em; line-height: 1.4; color: rgba(255, 255, 255, 1);
+                                                  .base-semilight-font();  text-shadow: 0 0 .5em #000000; filter: dropshadow(color=#000000, offx=0, offy=0);
+                                                  background-color: rgba(5, 170, 44, .9); .css-transition-all(); }
+
+    .slide > a .vignete                         { position: absolute; top: 6.6em; bottom: 0; left: 0; right: 0; background-color: rgba(0, 0, 0, .1); 
+                                                  -webkit-box-shadow: inset 0 0 10em 0 rgba(0, 0, 0, .5); box-shadow: inset 0 0 10em 0 rgba(0, 0, 0, .5); }
+    .slide > a:hover .vignete                   {  }
+
+    .slide > a:hover h1                         { background-color: rgba(0, 0, 0, .0); }
+    .slide > a:hover h1 span                    { background-color: rgba(5, 170, 44, 1); }
+
+    &.flexslider                                { margin: 0; border: 0; overflow: hidden; width: 100%; box-shadow: none;  }
+    
+    .flex-control-nav                           { bottom: 3em; }
+    
+    .flex-control-nav a                         { background-color: rgba(255, 255, 255, .3); width: 1.6em; height: 1.6em; }
+    .flex-control-nav a.flex-active             { background-color: rgba(255, 255, 255, 1); }
+
+    .flex-direction-nav .flex-prev              { left: 5px;  opacity: .3; }
+    .flex-direction-nav .flex-next              { right: 5px; opacity: .3; }
+
+    .flex-direction-nav a                       { width: 4.7em; height: 9.1em; margin: auto 2em auto 2em; bottom: 3em; top: auto;
+                                                  background-image: url('/Assets/Themes/Shared/flexslider/images/bg_direction_nav_2.png'); 
+                                                  -moz-background-size: cover; -o-background-size: cover; -webkit-background-size: cover; background-size: cover; }
+    .flex-direction-nav .flex-disabled          { opacity: 0 !important; }
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------
+  RESOLUTION MEDIA QUERIES
+----------------------------------------------------------------------------------------------------------------------------------*/
+
+@media only screen and (min-width: 1580px) and (max-width: 1799px)
+{ 
+    .home .billboard .slide > a                              { height: 81em; }
+}
+@media only screen and (min-width: 1390px) and (max-width: 1579px)
+{ 
+    .home .billboard .slide > a                              { height: 70em; }
+}
+@media only screen and (min-width: 1265px) and (max-width: 1389px)
+{ 
+    .home .billboard .slide > a                              { height: 70em; }
+}
+@media only screen and (min-width: 1135px) and (max-width: 1264px)
+{ 
+    .home .billboard .slide > a                              { height: 70em; }
+}
+@media only screen and (max-width: 1134px)
+{ 
+    .home .billboard .slide > a                              { height: 60em; }
+    .home .billboard .flex-direction-nav a                   { width: 2.7em; height: 5.1em; }
+
+}
+@media only screen and (max-width: 850px)
+{ 
+    .home .billboard .slide > a h1 span                     { font-size: 3.5em; }
+}
+@media only screen and (max-width: 650px)
+{ 
+    .home .billboard .slide > a                             { height: 55em; }
+    .home .billboard .slide > a h1 span                     { font-size: 3.5em; }
+}

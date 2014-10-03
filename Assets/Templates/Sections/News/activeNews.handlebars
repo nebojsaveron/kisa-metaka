@@ -1,0 +1,14 @@
+{{#with activeNews}}
+    <div class="inner">
+
+			<h1 class="title"> {{title}} </h1>
+			<span class="dateTime"> {{printLongDateTime publishedOn}} </span>
+			
+			<p class="summary"> {{{summary}}} </p>
+
+			<div class="image" style="background-image: url('{{pictureUrl}}');"> </div>
+			
+			<div class="text"> {{{text}}} </div>
+
+    </div>
+{{/with}}
